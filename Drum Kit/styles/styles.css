@@ -35,18 +35,18 @@ h1 {
 }
 
 /* drum */
-.row {
+.drum {
   position: relative;
 }
-.row img {
+.drum img {
   width: 50px;
   transition: transform 0.5s;
   cursor: pointer;
 }
-.row img.playing {
+.drum img.playing {
   transform: scale(1.5);
 }
-.row > span {
+.drum > span {
   position: absolute;
   left: -30px;
   transform: translateY(-50%);
@@ -63,6 +63,9 @@ label input + span {
   border: 1px solid #b1b9c0;
   border-radius: 5px;
   cursor: pointer;
+}
+label input.active + span {
+  border: 2px solid #eb495d;
 }
 label input:checked + span {
   background-color: #9ca2ab;

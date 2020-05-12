@@ -17,94 +17,95 @@
     />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <script defer src="index.js"></script>
   </head>
   <body>
     <section id="sequencer-container" class="sequencer-container">
       <h1>Drum it up!</h1>
       <div id="sequencer" class="sequencer">
-        <div class="row" data-target-drum="crash">
-          <span class="keydown">U</span>
-          <img src="img/crash.png" alt="Crash" data-key="85" />
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
+        <div class="drum" data-key="69">
+          <span class="keydown">E</span>
+          <img src="img/crash.png" alt="Crash" data-key="69" />
+          <label><input type="checkbox" data-key="69" /><span></span></label>
+          <label><input type="checkbox" data-key="69" /><span></span></label>
+          <label><input type="checkbox" data-key="69" /><span></span></label>
+          <label><input type="checkbox" data-key="69" /><span></span></label>
+          <label><input type="checkbox" data-key="69" /><span></span></label>
+          <label><input type="checkbox" data-key="69" /><span></span></label>
+          <label><input type="checkbox" data-key="69" /><span></span></label>
+          <label><input type="checkbox" data-key="69" /><span></span></label>
         </div>
-        <div class="row" data-target-drum="hiHat">
+        <div class="drum" data-key="82">
           <span class="keydown">R</span>
           <img src="img/hi-hat.png" alt="Hi hat" data-key="82" />
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
+          <label><input type="checkbox" data-key="82" /><span></span></label>
+          <label><input type="checkbox" data-key="82" /><span></span></label>
+          <label><input type="checkbox" data-key="82" /><span></span></label>
+          <label><input type="checkbox" data-key="82" /><span></span></label>
+          <label><input type="checkbox" data-key="82" /><span></span></label>
+          <label><input type="checkbox" data-key="82" /><span></span></label>
+          <label><input type="checkbox" data-key="82" /><span></span></label>
+          <label><input type="checkbox" data-key="82" /><span></span></label>
         </div>
-        <div class="row" data-target-drum="snare">
+        <div class="drum" data-key="70">
           <span class="keydown">F</span>
           <img src="img/snare.png" alt="Snare" data-key="70" />
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
+          <label><input type="checkbox" data-key="70" /><span></span></label>
+          <label><input type="checkbox" data-key="70" /><span></span></label>
+          <label><input type="checkbox" data-key="70" /><span></span></label>
+          <label><input type="checkbox" data-key="70" /><span></span></label>
+          <label><input type="checkbox" data-key="70" /><span></span></label>
+          <label><input type="checkbox" data-key="70" /><span></span></label>
+          <label><input type="checkbox" data-key="70" /><span></span></label>
+          <label><input type="checkbox" data-key="70" /><span></span></label>
         </div>
-        <div class="row" data-target-drum="leftTom">
+        <div class="drum" data-key="89">
           <span class="keydown">Y</span>
           <img src="img/left-tom.png" alt="Left tom" data-key="89" />
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
+          <label><input type="checkbox" data-key="89" /><span></span></label>
+          <label><input type="checkbox" data-key="89" /><span></span></label>
+          <label><input type="checkbox" data-key="89" /><span></span></label>
+          <label><input type="checkbox" data-key="89" /><span></span></label>
+          <label><input type="checkbox" data-key="89" /><span></span></label>
+          <label><input type="checkbox" data-key="89" /><span></span></label>
+          <label><input type="checkbox" data-key="89" /><span></span></label>
+          <label><input type="checkbox" data-key="89" /><span></span></label>
         </div>
-        <div class="row" data-target-drum="rightTom">
+        <div class="drum" data-key="84">
           <span class="keydown">T</span>
           <img src="img/right-tom.png" alt="Right tom" data-key="84" />
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
+          <label><input type="checkbox" data-key="84" /><span></span></label>
+          <label><input type="checkbox" data-key="84" /><span></span></label>
+          <label><input type="checkbox" data-key="84" /><span></span></label>
+          <label><input type="checkbox" data-key="84" /><span></span></label>
+          <label><input type="checkbox" data-key="84" /><span></span></label>
+          <label><input type="checkbox" data-key="84" /><span></span></label>
+          <label><input type="checkbox" data-key="84" /><span></span></label>
+          <label><input type="checkbox" data-key="84" /><span></span></label>
         </div>
-        <div class="row" data-target-drum="floorTom">
+        <div class="drum" data-key="72">
           <span class="keydown">H</span>
           <img src="img/floor-tom.png" alt="Floor tom" data-key="72" />
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
+          <label><input type="checkbox" data-key="72" /><span></span></label>
+          <label><input type="checkbox" data-key="72" /><span></span></label>
+          <label><input type="checkbox" data-key="72" /><span></span></label>
+          <label><input type="checkbox" data-key="72" /><span></span></label>
+          <label><input type="checkbox" data-key="72" /><span></span></label>
+          <label><input type="checkbox" data-key="72" /><span></span></label>
+          <label><input type="checkbox" data-key="72" /><span></span></label>
+          <label><input type="checkbox" data-key="72" /><span></span></label>
         </div>
-        <div class="row" data-target-drum="kick">
+        <div class="drum" data-key="71">
           <span class="keydown">G</span>
           <img src="img/kick.png" alt="Kick" data-key="71" />
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
-          <label><input type="checkbox" /><span></span></label>
+          <label><input type="checkbox" data-key="71" /><span></span></label>
+          <label><input type="checkbox" data-key="71" /><span></span></label>
+          <label><input type="checkbox" data-key="71" /><span></span></label>
+          <label><input type="checkbox" data-key="71" /><span></span></label>
+          <label><input type="checkbox" data-key="71" /><span></span></label>
+          <label><input type="checkbox" data-key="71" /><span></span></label>
+          <label><input type="checkbox" data-key="71" /><span></span></label>
+          <label><input type="checkbox" data-key="71" /><span></span></label>
         </div>
         <div class="sequencer-controls">
           <button id="sequencer-active-btn" class="btn" aria-label="Play">
@@ -131,35 +132,12 @@
       </div>
     </section>
 
-    <audio class="key-85" src="audio/Crash.mp3" data-key="85"></audio>
-    <audio class="key-82" src="audio/Hi-Hat-Closed.mp3" data-key="82"></audio>
-    <audio class="key-70" src="audio/Snare.mp3" data-key="70"></audio>
-    <audio class="key-89" src="audio/Small-Rack-Tom.mp3" data-key="89"></audio>
-    <audio class="key-84" src="audio/Big-Rack-Tom.mp3" data-key="84"></audio>
-    <audio class="key-72" src="audio/Floor-Tom.mp3" data-key="72"></audio>
-    <audio class="key-71" src="audio/Kick.mp3" data-key="71"></audio>
-    <script>
-      function playSound(e) {
-        const keyCode =
-          e.type === "click"
-            ? parseInt(this.getAttribute("data-key"))
-            : e.keyCode;
-
-        const audio = document.querySelector(`audio[data-key="${keyCode}"]`);
-        const key = document.querySelector(`img[data-key="${keyCode}"]`);
-        if (!audio) return;
-
-        key.classList.add("playing");
-        audio.currentTime = 0;
-        audio.play();
-        setTimeout(() => key.classList.remove("playing"), 80);
-      }
-
-      const keys = Array.from(document.querySelectorAll(".row img"));
-      keys.forEach((key) => {
-        key.addEventListener("click", playSound);
-      });
-      window.addEventListener("keydown", playSound);
-    </script>
+    <audio src="audio/Crash.mp3" data-key="69"></audio>
+    <audio src="audio/Hi-Hat-Closed.mp3" data-key="82"></audio>
+    <audio src="audio/Snare.mp3" data-key="70"></audio>
+    <audio src="audio/Small-Rack-Tom.mp3" data-key="89"></audio>
+    <audio src="audio/Big-Rack-Tom.mp3" data-key="84"></audio>
+    <audio src="audio/Floor-Tom.mp3" data-key="72"></audio>
+    <audio src="audio/Kick.mp3" data-key="71"></audio>
   </body>
 </html>
