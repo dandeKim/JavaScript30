@@ -1,14 +1,15 @@
 "use strict";
 
-const playBtn = document.getElementById("sequencer-active-btn");
-const btnClassList = playBtn.firstElementChild.classList;
-const decreaseBtn = document.getElementById("bpm-decrease-btn");
-const increaseBtn = document.getElementById("bpm-increase-btn");
-const currentTempo = document.getElementById("bpm-indicator");
+const resetBtn = document.getElementById("reset-btn"),
+  playBtn = document.getElementById("sequencer-active-btn"),
+  btnClassList = playBtn.firstElementChild.classList,
+  decreaseBtn = document.getElementById("bpm-decrease-btn"),
+  increaseBtn = document.getElementById("bpm-increase-btn"),
+  currentTempo = document.getElementById("bpm-indicator");
 
-let bpm = 120;
-let interval = 30000 / bpm;
-let isPause = false;
+let bpm = 120,
+  interval = 30000 / bpm,
+  isPause = false;
 
 // play sound
 function playSound(e) {
@@ -121,3 +122,10 @@ function removeActive(input) {
   }
   input.forEach((el) => el.classList.remove("active"));
 }
+
+// reset
+resetBtn.addEventListener("click", () => {
+  const input = Array.from(document.querySelectorAll(".drum input"));
+  input.forEach((el) => (el.checked = false));
+  toggleBtn("false");
+});

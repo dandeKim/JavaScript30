@@ -29,11 +29,27 @@ body {
   background: #f2f4f8;
   font-family: "Poppins", sans-serif;
 }
+
+.title {
+  position: relative;
+}
 h1 {
   text-align: center;
   font-size: 24px;
 }
-
+.reset-btn {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  padding: 7px 17px;
+  border: none;
+  border-radius: 5px;
+  background: #d9dee2;
+  outline: none;
+}
+.reset-btn:hover {
+  background: #dae2e8;
+}
 /* drum */
 .drum {
   position: relative;

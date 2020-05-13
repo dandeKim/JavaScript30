@@ -10,13 +10,13 @@ keydown 및 click을 통해서 드럼 연주를 할 수 있다.
 
 ## Trouble Shooting
 
-#### clearInterval Issue
+### clearInterval Issue
 
 ❓setInterval 함수의 큐에 등록된 함수가 clearInterval을 했음에도 실행됨
 
 ❗️`isPause` 플래그를 통해 해결
 
-## To-do
+## Update
 
-- [x] 현재 재생 중인 부분 시각화
-- [ ] reset 버튼 추가
+- 재생 중인 영역 시각화
+- reset 버튼 추가
