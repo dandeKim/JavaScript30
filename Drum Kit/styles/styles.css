@@ -90,3 +90,19 @@ label input:checked + span {
 .sequencer-controls-tempo button:first-child {
   margin-right: 10px;
 }
+
+@media screen and (max-width: 720px) {
+  h1 {
+    font-size: 20px;
+  }
+  label input + span {
+    width: 30px;
+    height: 30px;
+  }
+  .drum img {
+    width: 30px;
+  }
+  .drum > span {
+    display: none;
+  }
+}
