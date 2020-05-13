@@ -5,6 +5,7 @@
 ## About
 
 keydown 및 click을 통해서 드럼 연주를 할 수 있다.
+
 지정한 템포에 맞춰 클릭한 input에 해당하는 audio를 연속 재생할 수 있다.
 
 ## Trouble Shooting
