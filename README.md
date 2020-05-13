@@ -11,4 +11,4 @@ Build 30 things with Vanilla Javascript
 
 ## List
 
-- [1. Drum it Up!](/Drum%20Kit/README.md)
+- [1. Drum it Up!](/Drum%20Kit)
