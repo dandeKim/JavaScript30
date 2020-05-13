@@ -1,3 +1,15 @@
+"use strict";
+
+const playBtn = document.getElementById("sequencer-active-btn");
+const btnClassList = playBtn.firstElementChild.classList;
+const decreaseBtn = document.getElementById("bpm-decrease-btn");
+const increaseBtn = document.getElementById("bpm-increase-btn");
+const currentTempo = document.getElementById("bpm-indicator");
+
+let bpm = 120;
+let interval = 30000 / bpm;
+let isPause = false;
+
 // play sound
 function playSound(e) {
   const keyCode =
@@ -38,12 +50,64 @@ drums.forEach((drum) => {
 });
 
 // play button
-const playBtn = document.getElementById("sequencer-active-btn");
 playBtn.addEventListener("click", function () {
-  const btnClassList = this.firstElementChild.classList;
-  btnClassList.contains("fa-play")
+  btnClassList.contains("fa-play") ? toggleBtn("play") : toggleBtn("pause");
+});
+
+function toggleBtn(condition) {
+  condition === "play"
     ? (btnClassList.remove("fa-play"),
       btnClassList.add("fa-pause"),
-      playingDrums())
-    : (btnClassList.remove("fa-pause"), btnClassList.add("fa-play"));
+      (isPause = false),
+      playDrums(),
+      nowPlaying())
+    : (btnClassList.remove("fa-pause"),
+      btnClassList.add("fa-play"),
+      (isPause = true));
+}
+
+// tempo
+decreaseBtn.addEventListener("click", () => {
+  if (bpm > 60) {
+    setTempo("decrease");
+  }
 });
+increaseBtn.addEventListener("click", () => {
+  if (bpm < 300) {
+    setTempo("increase");
+  }
+});
+
+function setTempo(condition) {
+  toggleBtn("pause");
+  bpm = parseInt(currentTempo.value);
+  condition === "decrease" ? (bpm -= 10) : (bpm += 10);
+  currentTempo.value = bpm;
+  interval = 30000 / bpm;
+}
+
+// play drums
+function playDrums() {
+  drums.forEach((drum) => {
+    const input = Array.from(drum.querySelectorAll("input"));
+    for (const i in input) {
+      ((j) => {
+        setTimeout(() => {
+          if (input[j].checked) {
+            playSound(input[j].getAttribute("data-key"));
+          }
+        }, j * interval);
+      })(i);
+    }
+  });
+}
+
+function nowPlaying() {
+  const startPlaying = setInterval(() => {
+    if (!isPause) {
+      playDrums();
+    } else {
+      clearInterval(startPlaying);
+    }
+  }, interval * 8);
+}
