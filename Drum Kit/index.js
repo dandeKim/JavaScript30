@@ -93,6 +93,8 @@ function playDrums() {
     for (const i in input) {
       ((j) => {
         setTimeout(() => {
+          removeActive(input);
+          input[j].classList.add("active");
           if (input[j].checked) {
             playSound(input[j].getAttribute("data-key"));
           }
@@ -108,6 +110,14 @@ function nowPlaying() {
       playDrums();
     } else {
       clearInterval(startPlaying);
+      removeActive();
     }
   }, interval * 8);
+}
+
+function removeActive(input) {
+  if (!input) {
+    input = document.querySelectorAll(".drum input");
+  }
+  input.forEach((el) => el.classList.remove("active"));
 }

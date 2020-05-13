@@ -1,4 +1,4 @@
-# 👍 JS Clock
+# ⏱ JS Clock
 
 ![title](./img/Readme.png)
 
