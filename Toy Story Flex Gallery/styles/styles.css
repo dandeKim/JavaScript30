@@ -1,0 +1,106 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  color: #2d2e36;
+  background: #f2f4f8;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.panels {
+  display: flex;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #333333;
+  color: white;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+
+  /* Safari transitionend event.propertyName === flex */
+  /* Chrome + FF transitionend event.propertyName === flex-grow */
+  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+    flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
+  font-size: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+.panel1 {
+  background-image: url(../img/1.jpg);
+}
+.panel2 {
+  background-image: url(../img/2.jpg);
+}
+.panel3 {
+  background-image: url(../img/3.jpg);
+}
+.panel4 {
+  background-image: url(../img/4.jpg);
+}
+.panel5 {
+  background-image: url(../img/5.jpg);
+}
+
+/* Flex items */
+.panel > * {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transition: transform 0.5s;
+}
+.panel > *:first-child {
+  transform: translateY(-100%);
+}
+.panel > *:last-child {
+  transform: translateY(100%);
+}
+.panel.open-active > *:first-child,
+.panel.open-active > *:last-child {
+  transform: translateY(0);
+}
+
+.panel p {
+  text-transform: uppercase;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+  font-size: 1.5em;
+}
+
+.panel p:nth-child(2) {
+  font-size: 2em;
+}
+
+.panel.open {
+  flex: 5;
+  font-size: 24px;
+}
