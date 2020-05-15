@@ -14,3 +14,4 @@ Build 30 things with Vanilla Javascript
 1. 🥁[Drum it Up!](/Drum%20Kit)
 2. ⏱[JS Clock](/Clock)
 3. 🖼[Photo decoration](/CSS%20Variables)
+4. 💪[Array Cardio - 1](/Array%20Cardio%20-%201)
