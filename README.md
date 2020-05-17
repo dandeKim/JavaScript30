@@ -15,4 +15,5 @@ Build 30 things with Vanilla Javascript
 2. ⏱[JS Clock](/Clock)
 3. 🖼[Photo decoration](/CSS%20Variables)
 4. 💪[Array Cardio - 1](/Array%20Cardio%20-%201)
-5. 🚂 [Toy Story Flex Gallery](/Toy%20Story%20Flex%20Gallery)
+5. 🚂[Toy Story Flex Gallery](/Toy%20Story%20Flex%20Gallery)
+6. 👀[Auto Complete](/Auto%20Complete)

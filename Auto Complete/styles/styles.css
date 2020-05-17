@@ -1,0 +1,65 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  color: #2d2e36;
+  background: #f2f4f8;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+input {
+  width: 100%;
+  padding: 20px;
+}
+
+p {
+  text-align: center;
+}
+
+.search-form {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 0 10px;
+}
+
+input.search {
+  z-index: 2;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.12);
+  font-size: 24px;
+}
+
+.suggestions {
+  position: relative;
+  top: 5px;
+  margin: 0;
+  padding: 0;
+}
+
+.suggestions li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 16px;
+  list-style: none;
+  border-bottom: 1px solid #d8d8d8;
+  background: white;
+  text-transform: capitalize;
+}
+
+span.population {
+  font-size: 16px;
+}
+
+.hl {
+  background: #ffc600;
+}
