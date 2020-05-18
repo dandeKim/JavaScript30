@@ -83,7 +83,7 @@ section {
 
 .project li {
   display: inline-block;
-  margin: 0 5px;
+  margin: 0 5px 5px;
   background-color: #e5e7ea;
   padding: 5px 12px;
   border-radius: 20px;

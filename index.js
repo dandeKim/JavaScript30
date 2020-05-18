@@ -30,6 +30,11 @@ const projects = [
     tag: ["fetch", "filter", "RegExp"],
     directory: "Auto Complete",
   },
+  {
+    title: "💪 Array Cardio - 2",
+    tag: ["some", "every", "find", "findIndex"],
+    directory: "Array Cardio - 2",
+  },
 ];
 
 projects.forEach((project) => {
