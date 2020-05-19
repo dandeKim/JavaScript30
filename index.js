@@ -35,6 +35,11 @@ const projects = [
     tag: ["some", "every", "find", "findIndex"],
     directory: "Array Cardio - 2",
   },
+  {
+    title: "🎨 Let's Paint!",
+    tag: ["canvas", "addEventListener"],
+    directory: "HTML5 Canvas",
+  },
 ];
 
 projects.forEach((project) => {

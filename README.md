@@ -18,3 +18,4 @@ Build 30 things with Vanilla Javascript
 5. 🚂[Toy Story Flex Gallery](/Toy%20Story%20Flex%20Gallery)
 6. 👀[Auto Complete](/Auto%20Complete)
 7. 💪[Array Cardio 2](/Array%20Cardio%20-%202)
+8. 🎨[Let's Paint!](/HTML5%20Canvas)
