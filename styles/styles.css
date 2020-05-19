@@ -83,9 +83,9 @@ section {
 
 .project li {
   display: inline-block;
-  margin: 0 5px 5px;
+  margin: 0 3px;
   background-color: #e5e7ea;
-  padding: 5px 12px;
+  padding: 5px 11px;
   border-radius: 20px;
   font-size: 12px;
 }
