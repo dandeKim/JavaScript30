@@ -40,6 +40,11 @@ const projects = [
     tag: ["canvas", "addEventListener"],
     directory: "HTML5 Canvas",
   },
+  {
+    title: "🖥 Console Tricks",
+    tag: ["Dev tools", "console"],
+    directory: "Dev Tools Domination",
+  },
 ];
 
 projects.forEach((project) => {
