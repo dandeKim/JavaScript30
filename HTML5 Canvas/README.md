@@ -4,7 +4,8 @@
 
 ## About
 
-HTML5 canvas를 이용한 그림판
+HTML5 canvas를 이용한 그림판이다.
+브러시/페인트의 굵기와 색을 조절할 수 있고 완성한 그림을 저장할 수 있다.
 
 ## Trouble Shooting
 
