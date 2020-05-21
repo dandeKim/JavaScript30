@@ -20,3 +20,4 @@ Build 30 things with Vanilla Javascript
 7. 💪[Array Cardio 2](/Array%20Cardio%20-%202)
 8. 🎨[Let's Paint!](/HTML5%20Canvas)
 9. 🖥[Console Tricks](/Dev%20Tools%20Domination)
+10. ✔️[Hold Shift and Check](/Multiple%20Checkboxes)

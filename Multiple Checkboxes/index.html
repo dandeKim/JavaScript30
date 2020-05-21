@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hold Shift and Check</title>
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <style>
+      body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 100vh;
+        color: #2d2e36;
+        background: #f2f4f8;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .inbox {
+        max-width: 400px;
+        margin: 0 10px;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 10px 10px 12px rgba(111, 111, 111, 0.1);
+      }
+
+      .item {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #f1f1f1;
+      }
+
+      .item:last-child {
+        border-bottom: 0;
+      }
+
+      input:checked + p {
+        background: #f9f9f9;
+        text-decoration: line-through;
+      }
+
+      input[type="checkbox"] {
+        margin: 20px;
+      }
+
+      p {
+        margin: 0;
+        padding: 20px;
+        transition: background 0.2s;
+        flex: 1;
+        font-size: 20px;
+        font-weight: 200;
+        border-left: 1px solid #d1e2ff;
+      }
+    </style>
+    <div class="inbox">
+      <label class="item">
+        <input type="checkbox" />
+        <p>This is an inbox layout.</p>
+      </label>
+      <label class="item">
+        <input type="checkbox" />
+        <p>Check one item</p>
+      </label>
+      <label class="item">
+        <input type="checkbox" />
+        <p>Hold down your Shift key</p>
+      </label>
+      <label class="item">
+        <input type="checkbox" />
+        <p>Check a lower item</p>
+      </label>
+      <label class="item">
+        <input type="checkbox" />
+        <p>Everything in between should also be set to checked</p>
+      </label>
+      <label class="item">
+        <input type="checkbox" />
+        <p>Try to do it without any libraries</p>
+      </label>
+      <label class="item">
+        <input type="checkbox" />
+        <p>Just regular JavaScript</p>
+      </label>
+      <label class="item">
+        <input type="checkbox" />
+        <p>Good Luck!</p>
+      </label>
+      <label class="item">
+        <input type="checkbox" />
+        <p>Don't forget to tweet your result!</p>
+      </label>
+    </div>
+  </body>
+</html>

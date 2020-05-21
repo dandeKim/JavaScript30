@@ -45,6 +45,11 @@ const projects = [
     tag: ["Dev tools", "console"],
     directory: "Dev Tools Domination",
   },
+  {
+    title: "✔️ Hold Shift and Check",
+    tag: ["checkbox", "e.shiftKey"],
+    directory: "Multiple Checkboxes",
+  },
 ];
 
 projects.forEach((project) => {
