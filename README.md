@@ -21,3 +21,4 @@ Build 30 things with Vanilla Javascript
 8. 🎨[Let's Paint!](/HTML5%20Canvas)
 9. 🖥[Console Tricks](/Dev%20Tools%20Domination)
 10. ✔️[Hold Shift and Check](/Multiple%20Checkboxes)
+11. 📼[Video Player](/Custom%20Video%20Player)

@@ -50,6 +50,11 @@ const projects = [
     tag: ["checkbox", "e.shiftKey"],
     directory: "Multiple Checkboxes",
   },
+  {
+    title: "📼 Video Player",
+    tag: ["video", "addEventListener"],
+    directory: "Custom Video Player",
+  },
 ];
 
 projects.forEach((project) => {
