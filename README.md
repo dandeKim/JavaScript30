@@ -22,3 +22,4 @@ Build 30 things with Vanilla Javascript
 9. 🖥[Console Tricks](/Dev%20Tools%20Domination)
 10. ✔️[Hold Shift and Check](/Multiple%20Checkboxes)
 11. 📼[Video Player](/Custom%20Video%20Player)
+12. 🦄[Find Unicorn](/Key%20Sequence%20Detection)

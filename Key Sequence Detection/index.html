@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>🦄Find Unicorn</title>
+    <script
+      defer
+      type="text/javascript"
+      src="https://www.cornify.com/js/cornify.js"
+    ></script>
+    <style>
+      body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 100vh;
+        color: #2d2e36;
+        background: #f2f4f8;
+        font-family: "helvetica neue", sans-serif;
+        font-weight: 400;
+        text-align: center;
+        overflow-y: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Find Unicorn with Secret Code!</p>
+    <script>
+      const pressed = [];
+      const secretCode = "wow";
+      window.addEventListener("keyup", (e) => {
+        pressed.push(e.key);
+        pressed.splice(
+          -secretCode.length - 1,
+          pressed.length - secretCode.length
+        );
+        if (pressed.join("").includes(secretCode)) {
+          cornify_add();
+        }
+      });
+    </script>
+  </body>
+</html>

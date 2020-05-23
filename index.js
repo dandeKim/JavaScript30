@@ -55,6 +55,11 @@ const projects = [
     tag: ["video", "addEventListener"],
     directory: "Custom Video Player",
   },
+  {
+    title: "🦄 Find Unicorn",
+    tag: ["array", "splice", "addEventListener"],
+    directory: "Key Sequence Detection",
+  },
 ];
 
 projects.forEach((project) => {
