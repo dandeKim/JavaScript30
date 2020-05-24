@@ -60,6 +60,11 @@ const projects = [
     tag: ["array", "splice", "addEventListener"],
     directory: "Key Sequence Detection",
   },
+  {
+    title: " 👉 Slide In On Scroll",
+    tag: ["scroll", "debounce"],
+    directory: "Slide In On Scroll",
+  },
 ];
 
 projects.forEach((project) => {
