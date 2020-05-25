@@ -65,6 +65,11 @@ const projects = [
     tag: ["scroll", "debounce"],
     directory: "Slide In On Scroll",
   },
+  {
+    title: " 🧐 JS Reference VS Copy",
+    tag: ["reference", "copy"],
+    directory: "Reference VS Copy",
+  },
 ];
 
 projects.forEach((project) => {

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS Reference VS Copy</title>
+    <style>
+      body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 100vh;
+        color: #2d2e36;
+        background: #f2f4f8;
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Psst: have a look at the JavaScript Console 💁</p>
+    <script>
+      // start with strings, numbers and booleans
+      console.log(
+        "%c start with strings, numbers and booleans",
+        "font-size:13px; font-weight:bold;"
+      );
+      let age = 100;
+      let age2 = age;
+      console.log(age, age2); // 100 100
+      age = 200;
+      console.log(age, age2); // 200 100
+
+      let name = "dan";
+      let name2 = name;
+      console.log(name, name2); // dan dan
+      name = "ofkande";
+      console.log(name, name2); // ofkande dan
+
+      // Let's say we have an array
+      console.log(
+        "%c Let's say we have an array",
+        "font-size:13px; font-weight:bold;"
+      );
+      const players = ["Wes", "Sarah", "Ryan", "Poppy"];
+
+      // and we want to make a copy of it.
+      console.log(
+        "%c and we want to make a copy of it.",
+        "font-size:13px; font-weight:bold;"
+      );
+      const team = players;
+      console.log(players, team); // ["Wes", "Sarah", "Ryan", "Poppy"] ["Wes", "Sarah", "Ryan", "Poppy"]
+
+      // You might think we can just do something like this:
+      team[3] = "Lux";
+
+      // however what happens when we update that array?
+      console.log(players, team); // ["Wes", "Sarah", "Ryan", "Lux"] ["Wes", "Sarah", "Ryan", "Lux"]
+
+      // now here is the problem!
+
+      // oh no - we have edited the original array too!
+      console.warn("oh no - we have edited the original array too!");
+
+      // Why? It's because that is an array reference, not an array copy. They both point to the same array!
+      console.warn(
+        "Why? It's because that is an array reference, not an array copy. They both point to the same array!"
+      );
+      // So, how do we fix this? We take a copy instead!
+
+      // one way
+      console.log(
+        "%c  one way - We take a copy instead!",
+        "font-size:13px; font-weight:bold;"
+      );
+      const team2 = players.slice();
+      team2[3] = "dan";
+      console.log(players[3], team2[3]); // Lux dan
+
+      // or create a new array and concat the old one in
+      console.log(
+        "%c create a new array and concat the old one in",
+        "font-size:13px; font-weight:bold;"
+      );
+      const team3 = [].concat(players);
+
+      // or use the new ES6 Spread
+      console.log(
+        "%c use the new ES6 Spread",
+        "font-size:13px; font-weight:bold;"
+      );
+      const team4 = [...players];
+
+      // now when we update it, the original one isn't changed
+      team3[3] = "three";
+      team4[3] = "four";
+      console.log(team[3], team3[3], team4[3]); // Lux three four
+
+      // The same thing goes for objects, let's say we have a person object
+
+      console.log("%c with Objects", "font-size:13px; font-weight:bold;");
+      // with Objects
+      const person = {
+        name: "Wes Bos",
+        age: 80,
+      };
+
+      // and think we make a copy:
+      console.log(
+        "%c think we make a copy",
+        "font-size:13px; font-weight:bold;"
+      );
+      const person2 = person;
+      person.name = "ofkande";
+      console.log(person.name, person2.name); // ofkande ofkande
+
+      // how do we take a copy instead?
+      console.log(
+        "%c how do we take a copy instead?",
+        "font-size:13px; font-weight:bold;"
+      );
+      const person3 = Object.assign({}, person, { number: 99, age: 20 });
+      console.log(person3); // {name: "ofkande", age: 80, number: 99}age: 80name: "ofkande"number: 99__proto__: Object
+      console.log(person.number); // undefined
+
+      // object ...spread
+      console.log("%c object ...spread", "font-size:13px; font-weight:bold;");
+      const person4 = { ...person };
+      person4.age = 20;
+      console.log(person.age, person4.age); // 80 20
+
+      // Things to note - this is only 1 level deep - both for Arrays and Objects.
+      // lodash has a cloneDeep method, but you should think twice before using it.
+      console.warn(
+        "Things to note - this is only 1 level deep - both for Arrays and Objects."
+      );
+      console.warn(
+        "lodash has a cloneDeep method, but you should think twice before using it."
+      );
+      const dan = {
+        name: "dan",
+        age: 20,
+        social: {
+          facebook: "dan",
+          twitter: "@dan",
+        },
+      };
+      const dev = Object.assign({}, dan); // copy
+      dev.social.twitter = "@ofkande";
+      console.log(dan.social.twitter, dev.social.twitter); // @ofkande @ofkande
+
+      const dev2 = JSON.parse(JSON.stringify(dan));
+      dev2.social.twitter = "@awesome";
+      console.log(dan.social.twitter, dev2.social.twitter); // @ofkande @awesome
+    </script>
+  </body>
+</html>

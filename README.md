@@ -24,3 +24,4 @@ Build 30 things with Vanilla Javascript
 11. 📼[Video Player](/Custom%20Video%20Player)
 12. 🦄[Find Unicorn](/Key%20Sequence%20Detection)
 13. 👉[Slide In On Scroll](/Slide%20In%20On%20Scroll)
+14. 🧐[JS Reference VS Copy](/Reference%20VS%20Copy)
