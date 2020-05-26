@@ -70,6 +70,11 @@ const projects = [
     tag: ["reference", "copy"],
     directory: "Reference VS Copy",
   },
+  {
+    title: " 🌮 LOCAL TAPAS",
+    tag: ["localStorage"],
+    directory: "LocalStorage",
+  },
 ];
 
 projects.forEach((project) => {
