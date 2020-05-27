@@ -26,3 +26,4 @@ Build 30 things with Vanilla Javascript
 13. 👉[Slide In On Scroll](/Slide%20In%20On%20Scroll)
 14. 🧐[JS Reference VS Copy](/Reference%20VS%20Copy)
 15. 🌮[LOCAL TAPAS](/LocalStorage)
+16. 👥[Mouse Shadow](/Mouse%20Move%20Shadow)

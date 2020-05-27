@@ -75,6 +75,11 @@ const projects = [
     tag: ["localStorage"],
     directory: "LocalStorage",
   },
+  {
+    title: " 👥 Mouse Shadow",
+    tag: ["shadow", "offset"],
+    directory: "Mouse Move Shadow",
+  },
 ];
 
 projects.forEach((project) => {
