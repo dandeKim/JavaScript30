@@ -61,24 +61,29 @@ const projects = [
     directory: "Key Sequence Detection",
   },
   {
-    title: " 👉 Slide In On Scroll",
+    title: "👉 Slide In On Scroll",
     tag: ["scroll", "debounce"],
     directory: "Slide In On Scroll",
   },
   {
-    title: " 🧐 JS Reference VS Copy",
+    title: "🧐 JS Reference VS Copy",
     tag: ["reference", "copy"],
     directory: "Reference VS Copy",
   },
   {
-    title: " 🌮 LOCAL TAPAS",
+    title: "🌮 LOCAL TAPAS",
     tag: ["localStorage"],
     directory: "LocalStorage",
   },
   {
-    title: " 👥 Mouse Shadow",
+    title: "👥 Mouse Shadow",
     tag: ["shadow", "offset"],
     directory: "Mouse Move Shadow",
+  },
+  {
+    title: "🎸 Sort Without Articles",
+    tag: ["sort", "replace"],
+    directory: "Sort Without Articles",
   },
 ];
 

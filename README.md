@@ -27,3 +27,4 @@ Build 30 things with Vanilla Javascript
 14. 🧐[JS Reference VS Copy](/Reference%20VS%20Copy)
 15. 🌮[LOCAL TAPAS](/LocalStorage)
 16. 👥[Mouse Shadow](/Mouse%20Move%20Shadow)
+17. 🎸[Sort Without Articles](/Sort%20Without%20Articles)
