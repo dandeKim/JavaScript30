@@ -85,6 +85,11 @@ const projects = [
     tag: ["sort", "replace"],
     directory: "Sort Without Articles",
   },
+  {
+    title: "⏰ Left time of Videos",
+    tag: ["reduce", "dataset", "Math"],
+    directory: "Adding Up Times with Reduce",
+  },
 ];
 
 projects.forEach((project) => {
