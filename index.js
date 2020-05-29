@@ -90,6 +90,11 @@ const projects = [
     tag: ["reduce", "dataset", "Math"],
     directory: "Adding Up Times with Reduce",
   },
+  {
+    title: "📸 Take photos!",
+    tag: ["canvas", "mediaDevices", "camera"],
+    directory: "Webcam Fun",
+  },
 ];
 
 projects.forEach((project) => {

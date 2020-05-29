@@ -29,3 +29,4 @@ Build 30 things with Vanilla Javascript
 16. 👥[Mouse Shadow](/Mouse%20Move%20Shadow)
 17. 🎸[Sort Without Articles](/Sort%20Without%20Articles)
 18. ⏰[Left time of Videos](/Adding%20Up%20Times%20with%20Reduce)
+19. 📸[Take photos!](/Webcam%20Fun)

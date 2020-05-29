@@ -1,0 +1,108 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #2d2e36;
+  background: #f2f4f8;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.photobooth {
+  max-width: 1000px;
+}
+
+.take_photo {
+  font-size: 14px;
+  padding: 10px 20px;
+  border: 1px solid rgb(236, 230, 230);
+  border-radius: 100px;
+}
+
+.filters button {
+  padding: 5px 10px;
+  border: 1px solid rgb(236, 230, 230);
+  border-radius: 50px;
+}
+
+.red .filters button:nth-child(1),
+.rgb .filters button:nth-child(2),
+.black_white .filters button:nth-child(3) {
+  background: #c3cad8;
+}
+
+.rgb_controller {
+  display: block;
+  opacity: 0;
+  height: 0px;
+
+  transition: opacity 0.5s;
+  overflow: hidden;
+}
+.black_white .rgb_controller {
+  opacity: 1;
+  height: 100%;
+  margin-bottom: 10px;
+}
+.video_container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.photo {
+  width: 100%;
+  margin: auto;
+}
+
+.player {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+}
+
+.strip {
+  padding: 15px;
+}
+
+.strip img {
+  width: 100px;
+  padding: 0.8rem 0.8rem 2.5rem 0.8rem;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  background: #fff;
+}
+
+.strip a:nth-child(5n + 1) img {
+  transform: rotate(10deg);
+}
+.strip a:nth-child(5n + 2) img {
+  transform: rotate(-2deg);
+}
+.strip a:nth-child(5n + 3) img {
+  transform: rotate(8deg);
+}
+.strip a:nth-child(5n + 4) img {
+  transform: rotate(-11deg);
+}
+.strip a:nth-child(5n + 5) img {
+  transform: rotate(12deg);
+}
