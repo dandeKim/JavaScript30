@@ -95,6 +95,11 @@ const projects = [
     tag: ["canvas", "mediaDevices", "camera"],
     directory: "Webcam Fun",
   },
+  {
+    title: "🗣 Speech Detection",
+    tag: ["SpeechRecognition"],
+    directory: "Speech Detection",
+  },
 ];
 
 projects.forEach((project) => {
