@@ -105,6 +105,11 @@ const projects = [
     tag: ["geolocation"],
     directory: "Geolocation",
   },
+  {
+    title: "👣 Follow Along Nav",
+    tag: ["getBoundingClientRect", "mouseenter"],
+    directory: "Follow Along Link Highlighter",
+  },
 ];
 
 projects.forEach((project) => {

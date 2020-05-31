@@ -32,3 +32,4 @@ Build 30 things with Vanilla Javascript
 19. 📸[Take photos!](/Webcam%20Fun)
 20. 🗣[Speech Detection](/Speech%20Detection)
 21. 🏃‍♀️[Geolocation](/Geolocation)
+22. 👣[Follow Along Nav](/Follow%20Along%20Link%20Highlighter)
