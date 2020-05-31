@@ -100,6 +100,11 @@ const projects = [
     tag: ["SpeechRecognition"],
     directory: "Speech Detection",
   },
+  {
+    title: "🏃‍♀️ Geolocation",
+    tag: ["geolocation"],
+    directory: "Geolocation",
+  },
 ];
 
 projects.forEach((project) => {

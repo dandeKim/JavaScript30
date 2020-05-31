@@ -31,3 +31,4 @@ Build 30 things with Vanilla Javascript
 18. ⏰[Left time of Videos](/Adding%20Up%20Times%20with%20Reduce)
 19. 📸[Take photos!](/Webcam%20Fun)
 20. 🗣[Speech Detection](/Speech%20Detection)
+21. 🏃‍♀️[Geolocation](/Geolocation)
