@@ -34,3 +34,4 @@ Build 30 things with Vanilla Javascript
 21. 🏃‍♀️[Geolocation](/Geolocation)
 22. 👣[Follow Along Nav](/Follow%20Along%20Link%20Highlighter)
 23. 🗣[The Voiceinator 5000](/Speech%20Synthesis)
+24. 📌[Sticky Nav](/Sticky%20Nav)

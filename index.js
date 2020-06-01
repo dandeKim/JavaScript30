@@ -115,6 +115,11 @@ const projects = [
     tag: ["SpeechSynthesisUtterance"],
     directory: "Speech Synthesis",
   },
+  {
+    title: "📌 Sticky Nav",
+    tag: ["scroll", "scrollY", "offsetTop"],
+    directory: "Sticky Nav",
+  },
 ];
 
 projects.forEach((project) => {
