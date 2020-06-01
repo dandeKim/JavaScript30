@@ -120,6 +120,11 @@ const projects = [
     tag: ["scroll", "scrollY", "offsetTop"],
     directory: "Sticky Nav",
   },
+  {
+    title: "😯 JavaScript's Capture",
+    tag: ["event", "bubbling", "capture"],
+    directory: "Event Capture, Propagation, Bubbling and Once",
+  },
 ];
 
 projects.forEach((project) => {

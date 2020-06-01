@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JavaScript's Capture</title>
+    <style>
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background: #f2f4f8;
+        overflow-y: hidden;
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        max-height: 500px;
+        margin: auto;
+      }
+      .one {
+        max-width: 500px;
+        background: #ced8ea;
+        height: 90%;
+      }
+      .two {
+        background: #a1b7e0;
+        height: 70%;
+      }
+      .three {
+        background: #586e9a;
+        height: 50%;
+      }
+
+      button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #f2f4f8;
+        outline: none;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 15px;
+        box-shadow: 0 0 20px rgba(148, 148, 148, 0.4);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body class="bod">
+    <div class="one">
+      <div class="two">
+        <div class="three"></div>
+      </div>
+    </div>
+    <button>Click only once!</button>
+
+    <script>
+      const divs = document.querySelectorAll("div");
+      const button = document.querySelector("button");
+
+      function logText(e) {
+        // stop bubbling this event up
+        e.stopPropagation();
+        console.log(this.classList.value);
+      }
+
+      divs.forEach((div) =>
+        div.addEventListener("click", logText, {
+          capture: false,
+        })
+      );
+
+      button.addEventListener(
+        "click",
+        () => {
+          console.log("clicked!");
+        },
+        {
+          once: true, // only once
+        }
+      );
+    </script>
+  </body>
+</html>
