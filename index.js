@@ -96,7 +96,7 @@ const projects = [
     directory: "Webcam Fun",
   },
   {
-    title: "🗣 Speech Detection",
+    title: "✍️ Speech Detection",
     tag: ["SpeechRecognition"],
     directory: "Speech Detection",
   },
@@ -109,6 +109,11 @@ const projects = [
     title: "👣 Follow Along Nav",
     tag: ["getBoundingClientRect", "mouseenter"],
     directory: "Follow Along Link Highlighter",
+  },
+  {
+    title: "🗣 The Voiceinator 5000",
+    tag: ["SpeechSynthesisUtterance"],
+    directory: "Speech Synthesis",
   },
 ];
 

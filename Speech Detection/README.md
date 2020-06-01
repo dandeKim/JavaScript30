@@ -1,4 +1,4 @@
-# 🗣 Speech Detection
+# ✍️ Speech Detection
 
 ![title](./img/Readme.png)
 
