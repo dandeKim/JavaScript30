@@ -125,6 +125,11 @@ const projects = [
     tag: ["event", "bubbling", "capture"],
     directory: "Event Capture, Propagation, Bubbling and Once",
   },
+  {
+    title: "🔍 Follow Along Nav",
+    tag: ["getBoundingClientRect", "mouseEvent"],
+    directory: "Stripe Follow Along Nav",
+  },
 ];
 
 projects.forEach((project) => {
