@@ -130,6 +130,11 @@ const projects = [
     tag: ["getBoundingClientRect", "mouseEvent"],
     directory: "Stripe Follow Along Nav",
   },
+  {
+    title: "🖱 Click and Drag",
+    tag: ["scroll", "mouseEvent"],
+    directory: "Click and Drag",
+  },
 ];
 
 projects.forEach((project) => {
