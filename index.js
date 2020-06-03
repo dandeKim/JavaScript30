@@ -145,6 +145,11 @@ const projects = [
     tag: ["Date()", "setInterval", "clearInterval"],
     directory: "Countdown Timer",
   },
+  {
+    title: "🐾 Whack A Mole!",
+    tag: ["Math.random()", "setTimeOut"],
+    directory: "Whack A Mole",
+  },
 ];
 
 projects.forEach((project) => {

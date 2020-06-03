@@ -40,3 +40,4 @@ Build 30 things with Vanilla Javascript
 27. 🖱 [Click and Drag](/Click%20and%20Drag)
 28. 📹 [Video Speed Scrubber](/Video%20Speed%20Controller)
 29. ⏳ [Countdown Timer](/Countdown%20Timer)
+30. 🐾 [Whack A Mole!](/Whack%20A%20Mole)
