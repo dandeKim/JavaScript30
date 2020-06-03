@@ -135,6 +135,11 @@ const projects = [
     tag: ["scroll", "mouseEvent"],
     directory: "Click and Drag",
   },
+  {
+    title: "📹 Video Speed Scrubber",
+    tag: ["video", "playbackRate"],
+    directory: "Video Speed Controller",
+  },
 ];
 
 projects.forEach((project) => {

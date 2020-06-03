@@ -38,3 +38,4 @@ Build 30 things with Vanilla Javascript
 25. 😯 [JavaScript's Capture](/Event%20Capture%2C%20Propagation%2C%20Bubbling%20and%20Once)
 26. 🔍 [Follow Along Nav](/Stripe%20Follow%20Along%20Nav)
 27. 🖱 [Click and Drag](/Click%20and%20Drag)
+28. 📹 [Video Speed Scrubber](/Video%20Speed%20Controller)
