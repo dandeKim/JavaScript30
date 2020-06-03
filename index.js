@@ -140,6 +140,11 @@ const projects = [
     tag: ["video", "playbackRate"],
     directory: "Video Speed Controller",
   },
+  {
+    title: "⏳ Countdown Timer",
+    tag: ["Date()", "setInterval", "clearInterval"],
+    directory: "Countdown Timer",
+  },
 ];
 
 projects.forEach((project) => {

@@ -1,0 +1,72 @@
+html {
+  color: #2d2e36;
+  background: #f2f4f8;
+  font-size: 10px;
+  font-weight: 200;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.display__time-left {
+  font-weight: 500;
+  font-size: 20rem;
+  margin: 0;
+}
+
+.timer {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.timer__controls {
+  display: flex;
+}
+
+.timer__controls > * {
+  flex: 1;
+}
+
+.timer__controls form {
+  flex: 1;
+  display: flex;
+}
+
+.timer__controls input {
+  flex: 1;
+  border: 0;
+  padding: 2rem;
+}
+
+.timer__button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+.timer__button:hover,
+.timer__button:focus {
+  background: #a8bce2;
+  outline: 0;
+}
+
+.display {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.display__end-time {
+  font-size: 3rem;
+  font-weight: 400;
+}
