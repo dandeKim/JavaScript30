@@ -164,7 +164,7 @@ function printProject(project) {
   a.href = `./${project.directory}/index.html`;
 
   const imgDiv = document.createElement("div");
-  imgDiv.classList.add("skeleton");
+  imgDiv.classList.add("skeleton", "loading");
   const img = document.createElement("img");
   img.src = `./${project.directory}/img/Readme.png`;
   img.href = project.directory;
@@ -187,6 +187,6 @@ function printProject(project) {
 const imgs = document.querySelectorAll("img");
 imgs.forEach((img) => {
   img.addEventListener("load", function () {
-    this.parentNode.classList.remove("skeleton");
+    this.parentNode.classList.remove("loading");
   });
 });

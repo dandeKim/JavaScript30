@@ -90,8 +90,8 @@ section {
   .project {
     width: 45%;
   }
-  .skeleton {
-    height: 70%;
+  .skeleton.loading {
+    min-height: 220px;
   }
 }
 
@@ -99,16 +99,24 @@ section {
   .project {
     width: 100%;
   }
+  .skeleton.loading {
+    min-height: 360px;
+  }
 }
 
 /* skeleton */
 .skeleton {
   position: relative;
-  background: #f2f4f8;
-  height: 70%;
+  display: flex;
+  align-items: flex-start;
   overflow: hidden;
 }
-.skeleton::before {
+.skeleton.loading {
+  height: 60%;
+  min-height: 160px;
+  background: #f2f4f8;
+}
+.skeleton.loading::before {
   content: "";
   display: block;
   position: absolute;
