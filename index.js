@@ -163,9 +163,12 @@ function printProject(project) {
   const a = document.createElement("a");
   a.href = `./${project.directory}/index.html`;
 
+  const imgDiv = document.createElement("div");
+  imgDiv.classList.add("skeleton");
   const img = document.createElement("img");
   img.src = `./${project.directory}/img/Readme.png`;
   img.href = project.directory;
+  imgDiv.appendChild(img);
 
   const h3 = document.createElement("h3");
   h3.innerText = project.title;
@@ -174,9 +177,16 @@ function printProject(project) {
   project.tag.forEach((tag) => (ul.innerHTML += `<li>#${tag}</li>`));
 
   div.appendChild(a);
-  a.appendChild(img);
+  a.appendChild(imgDiv);
   a.appendChild(h3);
   a.appendChild(ul);
 
   section.appendChild(div);
 }
+
+const imgs = document.querySelectorAll("img");
+imgs.forEach((img) => {
+  img.addEventListener("load", function () {
+    this.parentNode.classList.remove("skeleton");
+  });
+});
