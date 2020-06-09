@@ -1,5 +1,7 @@
 # JavaScript Challenge
 
+![javascrip30](./Readme.png)
+
 Build 30 things with Vanilla Javascript
 
 - No Frameworks
@@ -7,7 +9,11 @@ Build 30 things with Vanilla Javascript
 - No Libraries
 - No Boilerplate
 
-[https://javascript30.com/](https://javascript30.com/)
+[✨ 완성작 확인하기](https://ofkande.github.io/JavaScript30/)
+
+[✨ 챌린지 진행 후기](https://dandevlog.netlify.app/JavaScript/javascript30/)
+
+[🔥 JavaScript30 챌린지(original) 페이지 바로가기](https://javascript30.com/)
 
 ## List
 
