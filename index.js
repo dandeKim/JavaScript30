@@ -152,9 +152,7 @@ const projects = [
   },
 ];
 
-projects.forEach((project) => {
-  printProject(project);
-});
+projects.forEach((project) => printProject(project));
 
 function printProject(project) {
   const div = document.createElement("div");
@@ -167,7 +165,7 @@ function printProject(project) {
   imgDiv.classList.add("skeleton", "loading");
   const img = document.createElement("img");
   img.src = `./${project.directory}/img/Readme.png`;
-  img.href = project.directory;
+  img.alt = project.directory;
   imgDiv.appendChild(img);
 
   const h3 = document.createElement("h3");
