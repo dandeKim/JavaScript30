@@ -9,7 +9,7 @@ Build 30 things with Vanilla Javascript
 - No Libraries
 - No Boilerplate
 
-[✨ 완성작 확인하기](https://ofkande.github.io/JavaScript30/)
+[✨ 완성작 확인하기](https://dandekim.github.io/JavaScript30/)
 
 [✨ 챌린지 진행 후기](https://dandevlog.netlify.app/JavaScript/javascript30/)
 
