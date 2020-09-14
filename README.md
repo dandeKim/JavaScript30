@@ -11,7 +11,7 @@ Build 30 things with Vanilla Javascript
 
 [✨ 완성작 확인하기](https://dandekim.github.io/JavaScript30/)
 
-[✨ 챌린지 진행 후기](https://dandevlog.netlify.app/JavaScript/javascript30/)
+<!-- [✨ 챌린지 진행 후기](https://dandevlog.netlify.app/JavaScript/javascript30/) -->
 
 [🔥 JavaScript30 챌린지(original) 페이지 바로가기](https://javascript30.com/)
 
